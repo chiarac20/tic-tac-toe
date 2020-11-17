@@ -1,0 +1,99 @@
+#body {
+    background-color:blanchedalmond;
+}
+
+.single-box {
+    border:1px black solid;
+    height: 2cm;
+    width:2cm;
+    margin-top: -2px;
+    margin-right: -4px;
+}
+
+.single-box:last-child{
+    border-right: none;
+}
+
+.single-box:first-child{
+    border-left: none;
+}
+
+.box-line:first-child>.single-box {
+    border-top: none;
+}
+
+.box-line:last-child>.single-box {
+    border-bottom: none;
+}
+
+.colour-red {
+    background-color: red;   
+}
+
+.colour-red-animation {
+    animation: background-red 2s infinite;
+}
+
+.colour-blue {
+    background-color: blue;
+}
+
+.colour-blue-animation {
+    animation: background-blue 2s infinite;
+}
+
+#tic-tac-toe-box {
+    padding: 10px;
+}
+
+#match-winner {
+    margin-top: 5%;
+    font-size: 30px;
+    font-style: normal;
+    color: darkgreen;
+}
+
+#match-winner.winner-blue {
+    color: blue;
+}
+
+#match-winner.winner-red {
+    color: red;   
+}
+
+.display-none {
+    display: none;
+}
+
+#start-new-game {
+    padding: 15px;
+    font-size: 20px;
+    color: darkslategrey;
+    background-color: lightgrey;
+    border-radius: 15px;
+    margin-top: 10%; 
+}
+
+@keyframes background-red {
+    0% {
+        background-color:red;
+    }
+    50% {
+        background-color: pink;
+    }
+    100% {
+        background-color: red;
+    }
+}
+
+@keyframes background-blue {
+    0% {
+        background-color: blue;
+    }
+    50% {
+        background-color:lightblue;
+    }
+    100% {
+        background-color: blue;
+    }
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-tac-toe</title>
+    <script src="index.js" async defer></script>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body id="body">
+    <div class="tic-tac-toe-box" id ="tic-tac-toe-box">
+        <div class="box-line">
+            <button class="single-box" data-col="0" data-row="2"></button>
+            <button class="single-box" data-col="1" data-row="2"></button>
+            <button class="single-box" data-col="2" data-row="2"></button>
+        </div>
+        <div class="box-line">
+            <button class="single-box" data-col="0" data-row="1"></button>
+            <button class="single-box" data-col="1" data-row="1"></button>
+            <button class="single-box" data-col="2" data-row="1"></button>
+        </div>
+        <div class="box-line">
+            <button class="single-box" data-col="0" data-row="0"></button>
+            <button class="single-box" data-col="1" data-row="0"></button>
+            <button class="single-box" data-col="2" data-row="0"></button>
+        </div>  
+    </div> 
+    <div id="match-winner"></div>
+    <div>
+        <button id="start-new-game" class='display-none'> Start a new match</button>
+    </div>
+</body>
+</html>
